@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Target, Heart, BookOpen, Lightbulb, Globe, Music } from 'lucide-react';
 import { getUpcomingEvents, getBlogPosts } from '../lib/api';
+import HeroSlider from '../components/HeroSlider';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 interface Event {
   id?: string;
@@ -21,6 +23,14 @@ interface BlogPost {
 const Home: React.FC = () => {
   const [upcomingEvents, setUpcomingEvents] = useState<Event[]>([]);
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+
+  // Scroll animation refs
+  const missionRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, triggerOnce: true });
+  const programsRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, triggerOnce: true });
+  const eventsRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, triggerOnce: true });
+  const newsRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, triggerOnce: true });
+  const testimonialsRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, triggerOnce: true });
+  const ctaRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, triggerOnce: true });
 
   useEffect(() => {
     const loadData = async () => {
@@ -71,41 +81,11 @@ const Home: React.FC = () => {
   return (
     <div className="pb-12">
       {/* Hero Section */}
-      <section className="hero-gradient py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center animate-fade">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Strengthen Your <span className="gradient-text">Community</span>
-              </h1>
-              <p className="text-lg text-gray-300 mb-8">
-                SOBA Calgary is dedicated to improving lives through poverty reduction, youth development, skills training, and community engagement programs.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/programs" className="btn-primary flex items-center justify-center gap-2">
-                  Explore Programs <ArrowRight size={20} />
-                </Link>
-                <Link to="/donate" className="btn-outline flex items-center justify-center gap-2">
-                  Make a Donation <Heart size={20} />
-                </Link>
-              </div>
-
-            </div>
-            <div className="relative hidden md:block">
-              <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-red-600/5 rounded-2xl blur-3xl"></div>
-              <img
-                src="/7.jpeg"
-                alt="SOBA Calgary Community"
-                className="rounded-2xl border border-gray-700 shadow-2xl relative z-10"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Mission Statement */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-        <div className="max-w-4xl mx-auto text-center animate-slide-up">
+        <div ref={missionRef.elementRef} className={`max-w-4xl mx-auto text-center animate-scroll-fade-in ${missionRef.isVisible ? 'animate-visible' : ''}`}>
           <h2 className="section-title">Our Mission</h2>
           <p className="text-lg text-gray-300 mb-6">
             To strengthen communities by supporting individuals, families, and youth through poverty reduction initiatives, education, mentorship, skills development, and community engagement programs.

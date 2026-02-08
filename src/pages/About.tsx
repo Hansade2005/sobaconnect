@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Target, Heart, Shield } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const About: React.FC = () => {
   const leadershipTeam = [
@@ -118,30 +119,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Impact Stats */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-red-600/10 via-red-600/5 to-red-600/10 border-y border-gray-800">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="section-title text-center mb-12">Our Impact</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">500+</div>
-              <p className="text-gray-300">Families Supported</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">100+</div>
-              <p className="text-gray-300">Active Volunteers</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">8</div>
-              <p className="text-gray-300">Program Areas</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">$$$</div>
-              <p className="text-gray-300">Community Investment</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 };

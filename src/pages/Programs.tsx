@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Target, Users, Globe, Lightbulb, BookOpen, Music, DollarSign } from 'lucide-react';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Programs: React.FC = () => {
   const programs = [
