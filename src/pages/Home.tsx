@@ -52,19 +52,19 @@ const Home: React.FC = () => {
       name: 'Sarah Ahmed',
       role: 'Program Participant',
       quote: 'SOBA Calgary completely transformed my life through their mentorship program. Highly recommend!',
-      avatar: 'https://api.a0.dev/assets/image?text=SA&aspect=1:1&seed=sarah'
+      avatar: '/5.jpeg'
     },
     {
       name: 'James Okafor',
       role: 'Community Member',
       quote: 'The skills training helped me land my dream job. Forever grateful to this amazing organization.',
-      avatar: 'https://api.a0.dev/assets/image?text=JO&aspect=1:1&seed=james'
+      avatar: '/6.jpeg'
     },
     {
       name: 'Maria Gonzalez',
       role: 'Volunteer',
       quote: 'Being part of SOBA Calgary has shown me the true meaning of community service.',
-      avatar: 'https://api.a0.dev/assets/image?text=MG&aspect=1:1&seed=maria'
+      avatar: '/7.jpeg'
     },
   ];
 
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
             <div className="relative hidden md:block">
               <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-red-600/5 rounded-2xl blur-3xl"></div>
               <img
-                src="https://api.a0.dev/assets/image?text=Community%20Impact&aspect=1:1&seed=hero"
+                src="/8.jpeg"
                 alt="SOBA Calgary Community"
                 className="rounded-2xl border border-gray-700 shadow-2xl relative z-10"
               />

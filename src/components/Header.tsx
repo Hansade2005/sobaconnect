@@ -31,9 +31,11 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="SOBA Calgary Logo"
+              className="w-10 h-10 rounded-lg object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="text-white font-bold text-lg">SOBA Calgary</h1>
               <p className="text-gray-400 text-xs">Community Network</p>

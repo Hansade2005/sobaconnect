@@ -3,10 +3,10 @@ import { Users, Target, Heart, Shield } from 'lucide-react';
 
 const About: React.FC = () => {
   const leadershipTeam = [
-    { name: 'Ngwesse Ewane', position: 'President', image: 'https://api.a0.dev/assets/image?text=NE&aspect=1:1&seed=ngwesse' },
-    { name: 'Obi Elvis', position: 'Secretary', image: 'https://api.a0.dev/assets/image?text=OE&aspect=1:1&seed=obi' },
-    { name: 'Ekane Ngulle', position: 'Financial Secretary', image: 'https://api.a0.dev/assets/image?text=EN&aspect=1:1&seed=ekane' },
-    { name: 'Ateba Macossendi', position: 'Public Relations Officer', image: 'https://api.a0.dev/assets/image?text=AM&aspect=1:1&seed=ateba' },
+    { name: 'Ngwesse Ewane', position: 'President', image: '/1.jpeg' },
+    { name: 'Obi Elvis', position: 'Secretary', image: '/2.jpeg' },
+    { name: 'Ekane Ngulle', position: 'Financial Secretary', image: '/3.jpeg' },
+    { name: 'Ateba Macossendi', position: 'Public Relations Officer', image: '/4.jpeg' },
   ];
 
   const values = [

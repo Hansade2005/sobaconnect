@@ -5,14 +5,29 @@ const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    { id: 1, title: 'Community Workshop', category: 'Events', image: 'https://api.a0.dev/assets/image?text=Community%20Workshop&aspect=1:1&seed=gal1' },
-    { id: 2, title: 'Youth Mentorship', category: 'Programs', image: 'https://api.a0.dev/assets/image?text=Youth%20Mentorship&aspect=1:1&seed=gal2' },
-    { id: 3, title: 'Volunteer Day', category: 'Volunteers', image: 'https://api.a0.dev/assets/image?text=Volunteer%20Day&aspect=1:1&seed=gal3' },
-    { id: 4, title: 'Skills Training', category: 'Programs', image: 'https://api.a0.dev/assets/image?text=Skills%20Training&aspect=1:1&seed=gal4' },
-    { id: 5, title: 'Community Gathering', category: 'Events', image: 'https://api.a0.dev/assets/image?text=Community%20Gathering&aspect=1:1&seed=gal5' },
-    { id: 6, title: 'Cultural Event', category: 'Culture', image: 'https://api.a0.dev/assets/image?text=Cultural%20Event&aspect=1:1&seed=gal6' },
-    { id: 7, title: 'Leadership Program', category: 'Programs', image: 'https://api.a0.dev/assets/image?text=Leadership%20Program&aspect=1:1&seed=gal7' },
-    { id: 8, title: 'Impact Story', category: 'Success', image: 'https://api.a0.dev/assets/image?text=Impact%20Story&aspect=1:1&seed=gal8' },
+    { id: 1, title: 'Community Workshop', category: 'Events', image: '/1.jpeg' },
+    { id: 2, title: 'Youth Mentorship', category: 'Programs', image: '/2.jpeg' },
+    { id: 3, title: 'Volunteer Day', category: 'Volunteers', image: '/3.jpeg' },
+    { id: 4, title: 'Skills Training', category: 'Programs', image: '/4.jpeg' },
+    { id: 5, title: 'Community Gathering', category: 'Events', image: '/5.jpeg' },
+    { id: 6, title: 'Cultural Event', category: 'Culture', image: '/6.jpeg' },
+    { id: 7, title: 'Leadership Program', category: 'Programs', image: '/7.jpeg' },
+    { id: 8, title: 'Impact Story', category: 'Success', image: '/8.jpeg' },
+    { id: 9, title: 'Community Outreach', category: 'Events', image: '/9.jpeg' },
+    { id: 10, title: 'Youth Development', category: 'Programs', image: '/10.jpeg' },
+    { id: 11, title: 'Cultural Celebration', category: 'Culture', image: '/11.jpeg' },
+    { id: 12, title: 'Volunteer Training', category: 'Volunteers', image: '/12.jpeg' },
+    { id: 13, title: 'Success Story', category: 'Success', image: '/13.jpeg' },
+    { id: 14, title: 'Team Building', category: 'Events', image: '/14.jpeg' },
+    { id: 15, title: 'Mentorship Session', category: 'Programs', image: '/15.jpeg' },
+    { id: 16, title: 'Community Service', category: 'Volunteers', image: '/16.jpeg' },
+    { id: 17, title: 'Cultural Heritage', category: 'Culture', image: '/17.jpeg' },
+    { id: 18, title: 'Achievement Celebration', category: 'Success', image: '/18.jpeg' },
+    { id: 19, title: 'Workshop Session', category: 'Programs', image: '/19.jpeg' },
+    { id: 20, title: 'Community Event', category: 'Events', image: '/20.jpeg' },
+    { id: 21, title: 'Volunteer Appreciation', category: 'Volunteers', image: '/21.jpeg' },
+    { id: 22, title: 'Cultural Festival', category: 'Culture', image: '/22.jpeg' },
+    { id: 23, title: 'Success Milestone', category: 'Success', image: '/23.jpeg' },
   ];
 
   return (
