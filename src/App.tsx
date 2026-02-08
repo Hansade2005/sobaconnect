@@ -13,6 +13,9 @@ import Membership from './pages/Membership'
 import { NotFound } from './components/NotFound'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
+import Volunteer from './pages/Volunteer'
+import Partnerships from './pages/Partnerships'
+import Fundraise from './pages/Fundraise'
 
 function App() {
   return (
