@@ -89,25 +89,12 @@ const Home: React.FC = () => {
                   Make a Donation <Heart size={20} />
                 </Link>
               </div>
-              <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-gray-700">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600">500+</div>
-                  <div className="text-sm text-gray-400">Families Supported</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600">100+</div>
-                  <div className="text-sm text-gray-400">Volunteers</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600">8</div>
-                  <div className="text-sm text-gray-400">Program Areas</div>
-                </div>
-              </div>
+
             </div>
             <div className="relative hidden md:block">
               <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-red-600/5 rounded-2xl blur-3xl"></div>
               <img
-                src="/8.jpeg"
+                src="/7.jpeg"
                 alt="SOBA Calgary Community"
                 className="rounded-2xl border border-gray-700 shadow-2xl relative z-10"
               />
