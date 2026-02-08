@@ -31,6 +31,9 @@ function App() {
           <Route path="/membership" element={<Membership />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/partnerships" element={<Partnerships />} />
+          <Route path="/fundraise" element={<Fundraise />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -40,6 +40,26 @@ const Gallery: React.FC = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">SOBA CALGARY: LAUNCH PARTY</h2>
+            <p className="text-xl text-gray-300">Watch our official launch event video</p>
+          </div>
+          <div className="aspect-video rounded-lg overflow-hidden shadow-2xl">
+            <iframe
+              src="https://www.youtube.com/embed/Fn60tQ9Es2I"
+              title="SOBA CALGARY: LAUNCH PARTY"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Grid */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">

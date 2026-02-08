@@ -141,8 +141,17 @@ const Contact: React.FC = () => {
               {/* Embedded Map */}
               <div className="card overflow-hidden">
                 <h3 className="text-xl font-semibold text-white mb-4">Our Location</h3>
-                <div className="w-full h-48 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center border border-gray-700">
-                  <p className="text-gray-400 text-center">📍 Calgary, Alberta<br />Canada</p>
+                <div className="w-full h-96 rounded-lg overflow-hidden border border-gray-700">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.289!2d-114.0719!3d51.0447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f84345b%3A0x1c2b6f8f6e1c4b2!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2s!4v1703123456789!5m2!1sen!2s"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="SOBA Calgary Location - Calgary, Alberta, Canada"
+                  ></iframe>
                 </div>
               </div>
             </div>

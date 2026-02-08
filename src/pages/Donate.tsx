@@ -328,15 +328,15 @@ const Donate: React.FC = () => {
               <div className="card bg-gradient-to-br from-blue-600/10 to-blue-600/5 border-blue-600/30">
                 <h3 className="text-xl font-semibold text-white mb-4">Other Ways to Help</h3>
                 <div className="space-y-3">
-                  <button className="w-full btn-secondary">
+                  <Link to="/volunteer" className="w-full btn-secondary block text-center">
                     Become a Volunteer
-                  </button>
-                  <button className="w-full btn-secondary">
+                  </Link>
+                  <Link to="/partnerships" className="w-full btn-secondary block text-center">
                     Corporate Partnerships
-                  </button>
-                  <button className="w-full btn-secondary">
+                  </Link>
+                  <Link to="/fundraise" className="w-full btn-secondary block text-center">
                     Fundraise for SOBA Calgary
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
