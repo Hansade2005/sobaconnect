@@ -49,21 +49,24 @@
 
     <!-- WhatsApp Chat Widget -->
     <script src="https://cdn.jsdelivr.net/npm/wa-chat-widget"></script>
+    <script>
+      // Initialize WhatsApp widget after DOM loads
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof waChatWidget !== 'undefined') {
+          waChatWidget.init({
+            phone: '14035551234',              // Calgary area code (403) - placeholder number
+            message: 'Hello! How can I help you today?',  // Pre-filled message
+            position: 'br',                    // Bottom right position
+            size: 60,                          // Icon size in px
+          });
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <!-- Visual Editor Client - enables visual editing when loaded in pipilot.dev iframe -->
     <script src="/visual-editor-client.js" defer></script>
-
-    <!-- WhatsApp Chat Widget Configuration -->
-    <script>
-      waChatWidget.init({
-        phone: '14035551234',              // Calgary area code (403) - placeholder number
-        message: 'Hello! How can I help you today?',  // Pre-filled message
-        position: 'br',                    // Bottom right position
-        size: 60,                          // Icon size in px
-      });
-    </script>
   </body>
 </html>
