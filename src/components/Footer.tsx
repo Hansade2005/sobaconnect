@@ -143,6 +143,27 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* PiPilot Credit */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex justify-center items-center gap-2">
+            <a
+              href="https://pipilot.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-500 hover:text-gray-400 transition-colors text-sm"
+            >
+              <img
+                src="https://pipilot.dev/logo.png"
+                alt="PiPilot Logo"
+                className="w-4 h-4"
+              />
+              <span>Built with PiPilot</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
