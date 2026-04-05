@@ -53,21 +53,19 @@ const Events: React.FC = () => {
   };
 
   const feastDayPhotos = [
-    '/team/gallery/gallery-1.jpeg',
-    '/team/gallery/gallery-2.jpeg',
-    '/team/gallery/gallery-3.jpeg',
-    '/team/gallery/gallery-4.jpeg',
-    '/team/gallery/gallery-5.jpeg',
-    '/team/gallery/gallery-6.jpeg',
-    '/team/gallery/gallery-7.jpeg',
-    '/team/gallery/gallery-8.jpeg',
-    '/team/gallery/gallery-9.jpeg',
-    '/team/gallery/gallery-10.jpeg',
-    '/team/gallery/gallery-11.jpeg',
-    '/team/gallery/gallery-12.jpeg',
-    '/team/gallery/gallery-13.jpeg',
-    '/team/gallery/gallery-14.jpeg',
-    '/team/gallery/gallery-15.jpeg',
+    '/team/events/IMG_5493.jpg',
+    '/team/events/IMG_5497.jpg',
+    '/team/events/IMG_5498.jpg',
+    '/team/events/IMG_5500.jpg',
+    '/team/events/IMG_5501.jpg',
+    '/team/events/IMG_5505.jpg',
+    '/team/events/IMG_5506.jpg',
+    '/team/events/IMG_5507.jpg',
+    '/team/events/IMG_5509.jpg',
+    '/team/events/IMG_5511.jpg',
+    '/team/events/IMG_5513.jpg',
+    '/team/events/IMG_5517.jpg',
+    '/team/events/IMG_5520.jpg',
   ];
 
   return (

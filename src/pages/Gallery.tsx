@@ -5,6 +5,21 @@ const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
+    // St. Joseph Feast Day - March 2026 (Recent)
+    { id: 101, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5493.jpg' },
+    { id: 102, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5497.jpg' },
+    { id: 103, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5498.jpg' },
+    { id: 104, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5500.jpg' },
+    { id: 105, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5501.jpg' },
+    { id: 106, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5505.jpg' },
+    { id: 107, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5506.jpg' },
+    { id: 108, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5507.jpg' },
+    { id: 109, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5509.jpg' },
+    { id: 110, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5511.jpg' },
+    { id: 111, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5513.jpg' },
+    { id: 112, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5517.jpg' },
+    { id: 113, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5520.jpg' },
+    // Other photos
     { id: 1, title: 'Community Workshop', category: 'Events', image: '/1.jpeg' },
     { id: 2, title: 'Youth Mentorship', category: 'Programs', image: '/2.jpeg' },
     { id: 3, title: 'Volunteer Day', category: 'Volunteers', image: '/3.jpeg' },
