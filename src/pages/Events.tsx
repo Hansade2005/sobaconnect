@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Calendar, Clock, MapPin, Users, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, ArrowRight, X } from 'lucide-react';
 import { getUpcomingEvents, registerForEvent } from '../lib/api';
 
 interface Event {
@@ -21,6 +21,7 @@ const Events: React.FC = () => {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const [registrationForm, setRegistrationForm] = useState({ name: '', email: '' });
   const [registering, setRegistering] = useState(false);
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
   useEffect(() => {
     const loadEvents = async () => {
@@ -51,6 +52,24 @@ const Events: React.FC = () => {
     setRegistering(false);
   };
 
+  const feastDayPhotos = [
+    '/team/gallery/gallery-1.jpeg',
+    '/team/gallery/gallery-2.jpeg',
+    '/team/gallery/gallery-3.jpeg',
+    '/team/gallery/gallery-4.jpeg',
+    '/team/gallery/gallery-5.jpeg',
+    '/team/gallery/gallery-6.jpeg',
+    '/team/gallery/gallery-7.jpeg',
+    '/team/gallery/gallery-8.jpeg',
+    '/team/gallery/gallery-9.jpeg',
+    '/team/gallery/gallery-10.jpeg',
+    '/team/gallery/gallery-11.jpeg',
+    '/team/gallery/gallery-12.jpeg',
+    '/team/gallery/gallery-13.jpeg',
+    '/team/gallery/gallery-14.jpeg',
+    '/team/gallery/gallery-15.jpeg',
+  ];
+
   return (
     <div className="pb-12">
       {/* Hero */}
@@ -61,9 +80,85 @@ const Events: React.FC = () => {
         </div>
       </section>
 
-      {/* Events List */}
+      {/* Featured Past Event - St. Joseph Feast Day */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block bg-red-600/20 text-red-400 text-sm font-semibold px-4 py-1 rounded-full mb-4">Recent Event</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">Saint Joseph Feast Day Celebration</h2>
+            <p className="text-gray-400 text-lg">March 1, 2026</p>
+          </div>
+
+          <div className="card mb-8">
+            <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-6">
+              <div className="flex items-center gap-2">
+                <Calendar size={16} className="text-red-600" />
+                Sunday, March 1, 2026
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock size={16} className="text-red-600" />
+                2:30 PM
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={16} className="text-red-600" />
+                St. Mother Teresa Syro Malabar, 3311 49 St SW, Calgary, AB
+              </div>
+            </div>
+
+            <div className="space-y-4 text-gray-300 leading-relaxed">
+              <p>
+                On March 1st 2026, members of SOBA Calgary, alongside their families and members of the wider community, gathered in a spirit of faith, unity, and brotherhood to celebrate the Feast of Saint Joseph, the patron saint of Sasse.
+              </p>
+              <p>
+                The event brought together Sobans and their families, creating a warm and meaningful atmosphere that reflected the strong bonds within the Soban community. Though modest in size, the gathering was rich in purpose—serving as a reminder of our shared values, traditions, and enduring heritage.
+              </p>
+              <p>
+                The celebration was marked by moments of reflection, prayer, and fellowship. A keynote address delivered during the event emphasized the importance of leadership, humility, and service—virtues embodied by Saint Joseph and deeply rooted in the Soban identity.
+              </p>
+              <p>
+                Under the leadership of President Ngwesse Ewane, SOBA Calgary continues to foster a sense of belonging and community among its members, even in diaspora. Events like this not only strengthen internal ties but also showcase the cultural and spiritual richness of Sasse tradition to the broader community.
+              </p>
+              <p>
+                As we honor Saint Joseph, we are reminded of his guiding presence in our lives and the values he represents—faith, resilience, and quiet strength.
+              </p>
+              <p className="text-white font-semibold italic">
+                May Saint Joseph always remain near to guide us. Happy Feast Day, Sobans!
+              </p>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-gray-700">
+              <p className="text-sm text-gray-500">
+                Highlights: Holy Mass Singing by SOBA | Grand Offertory Procession by SOBA | Reception Sponsored by SOBA
+              </p>
+            </div>
+          </div>
+
+          {/* Event Photo Gallery */}
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Event Photos</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {feastDayPhotos.map((photo, index) => (
+                <div
+                  key={index}
+                  className="relative group cursor-pointer overflow-hidden rounded-lg border border-gray-700 hover:border-red-600 transition-all"
+                  onClick={() => setSelectedPhoto(photo)}
+                >
+                  <img
+                    src={photo}
+                    alt={`St. Joseph Feast Day - Photo ${index + 1}`}
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Events List */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Upcoming Events</h2>
           {loading ? (
             <div className="text-center py-12">
               <p className="text-gray-400">Loading events...</p>
@@ -166,6 +261,23 @@ const Events: React.FC = () => {
               </div>
             </form>
           </div>
+        </div>
+      )}
+
+      {/* Photo Lightbox */}
+      {selectedPhoto && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+          <button
+            onClick={() => setSelectedPhoto(null)}
+            className="absolute top-4 right-4 p-2 hover:bg-gray-800 rounded-lg transition-colors"
+          >
+            <X size={32} className="text-white" />
+          </button>
+          <img
+            src={selectedPhoto}
+            alt="Event photo"
+            className="max-w-4xl max-h-[80vh] object-contain"
+          />
         </div>
       )}
     </div>
