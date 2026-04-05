@@ -9,7 +9,8 @@ import Donate from './pages/Donate'
 import News from './pages/News'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
-import Membership from './pages/Membership'
+// Membership page temporarily removed
+// import Membership from './pages/Membership'
 import { NotFound } from './components/NotFound'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
@@ -31,7 +32,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/membership" element={<Membership />} />
+          {/* Membership page temporarily removed */}
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/volunteer" element={<Volunteer />} />

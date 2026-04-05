@@ -201,7 +201,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 animate-slide-up">
             <h2 className="section-title">What People Say</h2>
-            <p className="section-subtitle">Hear from our community members and beneficiaries</p>
+            <p className="section-subtitle">Voices from our community</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 animate-fade">
             {testimonials.map((testimonial, index) => (
@@ -231,11 +231,11 @@ const Home: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Make a Difference?</h2>
           <p className="text-lg text-gray-300 mb-8">Join our community and help us create lasting change in Calgary.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/membership" className="btn-primary">
-              Become a Member
-            </Link>
-            <Link to="/donate" className="btn-secondary">
+            <Link to="/donate" className="btn-primary">
               Support Us Today
+            </Link>
+            <Link to="/contact" className="btn-secondary">
+              Contact Us
             </Link>
           </div>
         </div>

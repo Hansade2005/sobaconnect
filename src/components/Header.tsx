@@ -15,8 +15,8 @@ const Header: React.FC = () => {
       <div className="bg-slate-950 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center text-xs sm:text-sm text-gray-400">
           <div className="flex gap-4">
-            <a href="tel:+14035551234" className="flex items-center gap-2 hover:text-red-600 transition-colors">
-              <Phone size={14} /> +1 (403) 555-1234
+            <a href="tel:+15877033862" className="flex items-center gap-2 hover:text-red-600 transition-colors">
+              <Phone size={14} /> +1 (587) 703-3862
             </a>
             <a href="mailto:sobacalgary@gmail.com" className="flex items-center gap-2 hover:text-red-600 transition-colors hidden sm:flex">
               <Mail size={14} /> sobacalgary@gmail.com
@@ -69,9 +69,6 @@ const Header: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Link to="/membership" className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-sm font-medium transition-colors">
-              Join
-            </Link>
             <Link to="/donate" className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors">
               Donate
             </Link>
@@ -112,9 +109,6 @@ const Header: React.FC = () => {
               Contact
             </Link>
             <div className="flex gap-2 pt-2">
-              <Link to="/membership" onClick={() => setIsMenuOpen(false)} className="flex-1 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-sm font-medium transition-colors text-center">
-                Join
-              </Link>
               <Link to="/donate" onClick={() => setIsMenuOpen(false)} className="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors text-center">
                 Donate
               </Link>

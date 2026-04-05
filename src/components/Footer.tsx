@@ -100,7 +100,6 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Get Involved</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/membership" className="hover:text-red-600 transition-colors">Become a Member</Link></li>
               <li><Link to="/donate" className="hover:text-red-600 transition-colors">Make a Donation</Link></li>
               <li><Link to="/gallery" className="hover:text-red-600 transition-colors">Photo Gallery</Link></li>
               <li><Link to="/contact" className="hover:text-red-600 transition-colors">Contact Us</Link></li>
@@ -114,7 +113,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex gap-3">
                 <Phone size={16} className="flex-shrink-0 text-red-600 mt-1" />
-                <span>+1 (403) 555-1234</span>
+                <span>+1 (587) 703-3862</span>
               </li>
               <li className="flex gap-3">
                 <Mail size={16} className="flex-shrink-0 text-red-600 mt-1" />
@@ -122,7 +121,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex gap-3">
                 <MapPin size={16} className="flex-shrink-0 text-red-600 mt-1" />
-                <span>Calgary, Alberta<br />Canada</span>
+                <span>155 Chelsea Road<br />Chestermere, AB T1X 1Z3</span>
               </li>
             </ul>
           </div>

@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
                 <Phone size={32} className="text-red-600" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-              <p className="text-gray-400 mb-2">+1 (403) 555-1234</p>
+              <p className="text-gray-400 mb-2">+1 (587) 703-3862</p>
               <p className="text-sm text-gray-500">Mon-Fri, 9AM-5PM</p>
             </div>
 
@@ -54,8 +54,8 @@ const Contact: React.FC = () => {
                 <MapPin size={32} className="text-red-600" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Address</h3>
-              <p className="text-gray-400 mb-2">Calgary, Alberta</p>
-              <p className="text-sm text-gray-500">Canada</p>
+              <p className="text-gray-400 mb-2">155 Chelsea Road</p>
+              <p className="text-sm text-gray-500">Chestermere, AB T1X 1Z3</p>
             </div>
           </div>
 
@@ -150,7 +150,7 @@ const Contact: React.FC = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="SOBA Calgary Location - Calgary, Alberta, Canada"
+                    title="SOBA Calgary Location - Chestermere, Alberta, Canada"
                   ></iframe>
                 </div>
               </div>
