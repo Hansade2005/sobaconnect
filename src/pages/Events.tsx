@@ -89,6 +89,15 @@ const Events: React.FC = () => {
             <p className="text-gray-400 text-lg">March 1, 2026</p>
           </div>
 
+          {/* Event Flyer */}
+          <div className="flex justify-center mb-8">
+            <img
+              src="/stfeastday.jpeg"
+              alt="St. Joseph Feast Day Celebration Flyer"
+              className="w-full max-w-2xl rounded-xl border border-gray-700 shadow-2xl"
+            />
+          </div>
+
           <div className="card mb-8">
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-6">
               <div className="flex items-center gap-2">
