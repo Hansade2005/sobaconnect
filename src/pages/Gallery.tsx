@@ -28,6 +28,21 @@ const Gallery: React.FC = () => {
     { id: 21, title: 'Volunteer Appreciation', category: 'Volunteers', image: '/21.jpeg' },
     { id: 22, title: 'Cultural Festival', category: 'Culture', image: '/22.jpeg' },
     { id: 23, title: 'Success Milestone', category: 'Success', image: '/23.jpeg' },
+    { id: 24, title: 'SOBA Community Moment', category: 'Events', image: '/team/gallery/gallery-1.jpeg' },
+    { id: 25, title: 'SOBA Fellowship', category: 'Events', image: '/team/gallery/gallery-2.jpeg' },
+    { id: 26, title: 'SOBA Gathering', category: 'Events', image: '/team/gallery/gallery-3.jpeg' },
+    { id: 27, title: 'SOBA Celebration', category: 'Events', image: '/team/gallery/gallery-4.jpeg' },
+    { id: 28, title: 'SOBA Together', category: 'Events', image: '/team/gallery/gallery-5.jpeg' },
+    { id: 29, title: 'SOBA Unity', category: 'Events', image: '/team/gallery/gallery-6.jpeg' },
+    { id: 30, title: 'SOBA Highlights', category: 'Events', image: '/team/gallery/gallery-7.jpeg' },
+    { id: 31, title: 'SOBA Memories', category: 'Events', image: '/team/gallery/gallery-8.jpeg' },
+    { id: 32, title: 'SOBA Bonding', category: 'Events', image: '/team/gallery/gallery-9.jpeg' },
+    { id: 33, title: 'SOBA Connect', category: 'Events', image: '/team/gallery/gallery-10.jpeg' },
+    { id: 34, title: 'SOBA Brothers', category: 'Events', image: '/team/gallery/gallery-11.jpeg' },
+    { id: 35, title: 'SOBA Spirit', category: 'Events', image: '/team/gallery/gallery-12.jpeg' },
+    { id: 36, title: 'SOBA Heritage', category: 'Culture', image: '/team/gallery/gallery-13.jpeg' },
+    { id: 37, title: 'SOBA Pride', category: 'Culture', image: '/team/gallery/gallery-14.jpeg' },
+    { id: 38, title: 'SOBA Legacy', category: 'Culture', image: '/team/gallery/gallery-15.jpeg' },
   ];
 
   return (
