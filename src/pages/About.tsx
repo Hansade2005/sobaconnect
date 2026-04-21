@@ -87,7 +87,7 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {leadershipTeam.map((member, index) => (
               <div key={index} className="card text-center">
-                <img src={member.image} alt={member.name} className="w-full h-48 object-cover rounded-lg mb-4" />
+                <img src={member.image} alt={member.name} className="w-full h-64 object-contain rounded-lg mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
                 <p className="text-red-600 font-semibold">{member.position}</p>
               </div>
