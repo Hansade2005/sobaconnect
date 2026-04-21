@@ -5,7 +5,15 @@ const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    // St. Joseph Feast Day - March 2026 (Recent)
+    // Latest event photos (April 2026)
+    { id: 201, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-1.jpeg' },
+    { id: 202, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-2.jpeg' },
+    { id: 203, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-3.jpeg' },
+    { id: 204, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-4.jpeg' },
+    { id: 205, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-5.jpeg' },
+    { id: 206, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-6.jpeg' },
+    { id: 207, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-7.jpeg' },
+    // St. Joseph Feast Day - earlier photos
     { id: 101, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5493.jpg' },
     { id: 102, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5497.jpg' },
     { id: 103, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5498.jpg' },
@@ -19,30 +27,7 @@ const Gallery: React.FC = () => {
     { id: 111, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5513.jpg' },
     { id: 112, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5517.jpg' },
     { id: 113, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/IMG_5520.jpg' },
-    // Other photos
-    { id: 1, title: 'Community Workshop', category: 'Events', image: '/1.jpeg' },
-    { id: 2, title: 'Youth Mentorship', category: 'Programs', image: '/2.jpeg' },
-    { id: 3, title: 'Volunteer Day', category: 'Volunteers', image: '/3.jpeg' },
-    { id: 4, title: 'Skills Training', category: 'Programs', image: '/4.jpeg' },
-    { id: 5, title: 'Community Gathering', category: 'Events', image: '/5.jpeg' },
-    { id: 6, title: 'Cultural Event', category: 'Culture', image: '/6.jpeg' },
-    { id: 7, title: 'Leadership Program', category: 'Programs', image: '/7.jpeg' },
-    { id: 8, title: 'Impact Story', category: 'Success', image: '/8.jpeg' },
-    { id: 9, title: 'Community Outreach', category: 'Events', image: '/9.jpeg' },
-    { id: 10, title: 'Youth Development', category: 'Programs', image: '/10.jpeg' },
-    { id: 11, title: 'Cultural Celebration', category: 'Culture', image: '/11.jpeg' },
-    { id: 12, title: 'Volunteer Training', category: 'Volunteers', image: '/12.jpeg' },
-    { id: 13, title: 'Success Story', category: 'Success', image: '/13.jpeg' },
-    { id: 14, title: 'Team Building', category: 'Events', image: '/14.jpeg' },
-    { id: 15, title: 'Mentorship Session', category: 'Programs', image: '/15.jpeg' },
-    { id: 16, title: 'Community Service', category: 'Volunteers', image: '/16.jpeg' },
-    { id: 17, title: 'Cultural Heritage', category: 'Culture', image: '/17.jpeg' },
-    { id: 18, title: 'Achievement Celebration', category: 'Success', image: '/18.jpeg' },
-    { id: 19, title: 'Workshop Session', category: 'Programs', image: '/19.jpeg' },
-    { id: 20, title: 'Community Event', category: 'Events', image: '/20.jpeg' },
-    { id: 21, title: 'Volunteer Appreciation', category: 'Volunteers', image: '/21.jpeg' },
-    { id: 22, title: 'Cultural Festival', category: 'Culture', image: '/22.jpeg' },
-    { id: 23, title: 'Success Milestone', category: 'Success', image: '/23.jpeg' },
+    // SOBA community photos
     { id: 24, title: 'SOBA Community Moment', category: 'Events', image: '/team/gallery/gallery-1.jpeg' },
     { id: 25, title: 'SOBA Fellowship', category: 'Events', image: '/team/gallery/gallery-2.jpeg' },
     { id: 26, title: 'SOBA Gathering', category: 'Events', image: '/team/gallery/gallery-3.jpeg' },
@@ -51,13 +36,15 @@ const Gallery: React.FC = () => {
     { id: 29, title: 'SOBA Unity', category: 'Events', image: '/team/gallery/gallery-6.jpeg' },
     { id: 30, title: 'SOBA Highlights', category: 'Events', image: '/team/gallery/gallery-7.jpeg' },
     { id: 31, title: 'SOBA Memories', category: 'Events', image: '/team/gallery/gallery-8.jpeg' },
-    { id: 32, title: 'SOBA Bonding', category: 'Events', image: '/team/gallery/gallery-9.jpeg' },
-    { id: 33, title: 'SOBA Connect', category: 'Events', image: '/team/gallery/gallery-10.jpeg' },
-    { id: 34, title: 'SOBA Brothers', category: 'Events', image: '/team/gallery/gallery-11.jpeg' },
-    { id: 35, title: 'SOBA Spirit', category: 'Events', image: '/team/gallery/gallery-12.jpeg' },
-    { id: 36, title: 'SOBA Heritage', category: 'Culture', image: '/team/gallery/gallery-13.jpeg' },
-    { id: 37, title: 'SOBA Pride', category: 'Culture', image: '/team/gallery/gallery-14.jpeg' },
-    { id: 38, title: 'SOBA Legacy', category: 'Culture', image: '/team/gallery/gallery-15.jpeg' },
+    // Other photos
+    { id: 1, title: 'Community Workshop', category: 'Events', image: '/1.jpeg' },
+    { id: 2, title: 'Youth Mentorship', category: 'Programs', image: '/2.jpeg' },
+    { id: 5, title: 'Community Gathering', category: 'Events', image: '/5.jpeg' },
+    { id: 6, title: 'Cultural Event', category: 'Culture', image: '/6.jpeg' },
+    { id: 7, title: 'Leadership Program', category: 'Programs', image: '/7.jpeg' },
+    { id: 9, title: 'Community Outreach', category: 'Events', image: '/9.jpeg' },
+    { id: 11, title: 'Cultural Celebration', category: 'Culture', image: '/11.jpeg' },
+    { id: 14, title: 'Team Building', category: 'Events', image: '/14.jpeg' },
   ];
 
   return (
