@@ -28,7 +28,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/donate" element={<Donate />} />
+          {/* Donate page commented out until charitable status obtained */}
+          {/* <Route path="/donate" element={<Donate />} /> */}
           <Route path="/news" element={<News />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />

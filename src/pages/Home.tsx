@@ -231,8 +231,8 @@ const Home: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Make a Difference?</h2>
           <p className="text-lg text-gray-300 mb-8">Join our community and help us create lasting change in Calgary.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/donate" className="btn-primary">
-              Support Us Today
+            <Link to="/about" className="btn-primary">
+              Learn About Us
             </Link>
             <Link to="/contact" className="btn-secondary">
               Contact Us

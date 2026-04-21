@@ -102,7 +102,7 @@ const Programs: React.FC = () => {
           <p className="text-lg text-gray-300 mb-8">Whether you want to participate in our programs, volunteer, or support our mission, we'd love to hear from you.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contact" className="btn-primary">Contact Us</a>
-            <a href="/donate" className="btn-secondary">Make a Donation</a>
+            {/* <a href="/donate" className="btn-secondary">Make a Donation</a> */}
           </div>
         </div>
       </section>

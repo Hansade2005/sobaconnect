@@ -67,12 +67,13 @@ const Header: React.FC = () => {
             </Link>
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Donate commented out until charitable status obtained
           <div className="hidden md:flex items-center gap-3">
             <Link to="/donate" className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors">
               Donate
             </Link>
           </div>
+          */}
 
           {/* Mobile menu button */}
           <button
@@ -108,11 +109,13 @@ const Header: React.FC = () => {
             <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-gray-300 hover:text-red-600 hover:bg-slate-800 rounded-lg transition-colors">
               Contact
             </Link>
+            {/* Donate commented out until charitable status obtained
             <div className="flex gap-2 pt-2">
               <Link to="/donate" onClick={() => setIsMenuOpen(false)} className="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-sm font-medium transition-colors text-center">
                 Donate
               </Link>
             </div>
+            */}
           </div>
         )}
       </nav>

@@ -100,7 +100,8 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Get Involved</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/donate" className="hover:text-red-600 transition-colors">Make a Donation</Link></li>
+              {/* Donate commented out until charitable status obtained */}
+              {/* <li><Link to="/donate" className="hover:text-red-600 transition-colors">Make a Donation</Link></li> */}
               <li><Link to="/gallery" className="hover:text-red-600 transition-colors">Photo Gallery</Link></li>
               <li><Link to="/contact" className="hover:text-red-600 transition-colors">Contact Us</Link></li>
               <li><Link to="/privacy" className="hover:text-red-600 transition-colors">Privacy Policy</Link></li>

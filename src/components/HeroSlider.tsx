@@ -84,6 +84,7 @@ const HeroSlider: React.FC = () => {
             Explore Programs
             <ChevronRight size={20} />
           </a>
+          {/* Donate commented out until charitable status obtained
           <a
             href="/donate"
             className="btn-outline text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
@@ -91,6 +92,7 @@ const HeroSlider: React.FC = () => {
             Make a Donation
             <span>❤️</span>
           </a>
+          */}
         </div>
       </div>
 
