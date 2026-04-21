@@ -60,6 +60,9 @@ const Events: React.FC = () => {
     '/team/events/event-new-5.jpeg',
     '/team/events/event-new-6.jpeg',
     '/team/events/event-new-7.jpeg',
+    '/team/events/IMG_5501.jpg',
+    '/team/events/IMG_5511.jpg',
+    '/team/events/IMG_5517.jpg',
   ];
 
   return (
