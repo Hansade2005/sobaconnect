@@ -5,9 +5,9 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 const About: React.FC = () => {
   const leadershipTeam = [
     { name: 'Ngwesse Ewane', position: 'President', image: '/team/President.jpeg' },
-    { name: 'Ateba McOssendi', position: 'Secretary General', image: '/team/Member.jpeg' },
-    { name: 'Obi Elvis', position: 'Financial Secretary', image: '/team/Financial Secretary.jpeg' },
-    { name: 'Ekane Ngulle', position: 'Public Relations Officer', image: '/team/PRO.jpeg' },
+    { name: 'Obi Elvis', position: 'Secretary General', image: '/team/Financial Secretary.jpeg' },
+    { name: 'Ekane Ngulle', position: 'Financial Secretary', image: '/team/PRO.jpeg' },
+    { name: 'Ateba McOssendi', position: 'Public Secretary', image: '/team/Member.jpeg' },
   ];
 
   const values = [
