@@ -84,6 +84,23 @@ const Events: React.FC = () => {
             <p className="text-gray-400 text-lg">Inaugural Youth Forum — A Day for the Children of SOBA Calgary</p>
           </div>
 
+          {/* Event Flyer & QR Code */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <img
+              src="/image-1781118752223.webp"
+              alt="Torchbearers 2026 Youth Forum Flyer"
+              className="w-full rounded-xl border border-gray-700 shadow-2xl"
+            />
+            <div className="flex flex-col items-center justify-center">
+              <p className="text-gray-400 text-sm mb-4">Scan to register</p>
+              <img
+                src="/2e3197e3-850e-4804-bca0-281469b9f29a.png"
+                alt="SOBA Calgary Registration QR Code"
+                className="w-64 h-64 rounded-xl border border-gray-700 shadow-xl"
+              />
+            </div>
+          </div>
+
           <div className="card mb-8">
             <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-6">
               <div className="flex items-center gap-2">
