@@ -75,6 +75,101 @@ const Events: React.FC = () => {
         </div>
       </section>
 
+      {/* Upcoming Event - Torchbearers 2026 */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block bg-green-600/20 text-green-400 text-sm font-semibold px-4 py-1 rounded-full mb-4">Upcoming Event</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">Torchbearers 2026</h2>
+            <p className="text-gray-400 text-lg">Inaugural Youth Forum — A Day for the Children of SOBA Calgary</p>
+          </div>
+
+          <div className="card mb-8">
+            <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-6">
+              <div className="flex items-center gap-2">
+                <Calendar size={16} className="text-green-500" />
+                Summer 2026 — Date to be Announced
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={16} className="text-green-500" />
+                Calgary venue to be confirmed
+              </div>
+            </div>
+
+            <p className="text-lg text-gray-200 italic mb-6">
+              A summer day for SOBA Calgary children, youth, and young adults — exploring careers, leadership, mentorship, and the world they will inherit.
+            </p>
+
+            <div className="space-y-4 text-gray-300 leading-relaxed mb-8">
+              <p>
+                In every generation, light must be carried forward. This summer, SOBA Calgary gathers our children for a day of orientation, mentorship, and possibility — preparing the next generation to take their place as professionals, leaders, and citizens of Calgary, of Canada, and of the world.
+              </p>
+            </div>
+
+            {/* Age Groups */}
+            <h3 className="text-xl font-bold text-white mb-4">Age Groups</h3>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-slate-800/50 border border-gray-700 rounded-lg p-5">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Group One</p>
+                <h4 className="text-lg font-bold text-white mb-1">Play Day</h4>
+                <p className="text-red-400 text-sm font-semibold mb-2">Under 10</p>
+                <p className="text-gray-400 text-sm">Structured play and friendship across SOBA Calgary families. A joyful day of community for our youngest.</p>
+              </div>
+              <div className="bg-slate-800/50 border border-gray-700 rounded-lg p-5">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Group Two</p>
+                <h4 className="text-lg font-bold text-white mb-1">Pathfinders</h4>
+                <p className="text-red-400 text-sm font-semibold mb-2">Ages 10–14</p>
+                <p className="text-gray-400 text-sm">Career discovery. Meeting professionals across many sectors. Imagining what is possible in the AI era.</p>
+              </div>
+              <div className="bg-slate-800/50 border border-gray-700 rounded-lg p-5">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Group Three</p>
+                <h4 className="text-lg font-bold text-white mb-1">Navigators</h4>
+                <p className="text-red-400 text-sm font-semibold mb-2">Ages 15–21</p>
+                <p className="text-gray-400 text-sm">Strategy, networks, scholarships, and pathways into civic leadership and public service.</p>
+              </div>
+            </div>
+
+            {/* What Children Will Experience */}
+            <h3 className="text-xl font-bold text-white mb-4">What Our Children Will Experience</h3>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-slate-800/50 border border-gray-700 rounded-lg p-5">
+                <h4 className="text-lg font-bold text-white mb-2">Mentorship</h4>
+                <p className="text-gray-400 text-sm">Seasoned Cameroonian-Canadian and African-Canadian professionals share their journeys and counsel.</p>
+              </div>
+              <div className="bg-slate-800/50 border border-gray-700 rounded-lg p-5">
+                <h4 className="text-lg font-bold text-white mb-2">The AI-Era Workforce</h4>
+                <p className="text-gray-400 text-sm">Honest conversation about how AI is changing careers — and what stays uniquely human.</p>
+              </div>
+              <div className="bg-slate-800/50 border border-gray-700 rounded-lg p-5">
+                <h4 className="text-lg font-bold text-white mb-2">Civic Leadership</h4>
+                <p className="text-gray-400 text-sm">Pathways into student leadership, volunteering, advocacy, public service, and future elected roles in Calgary and beyond.</p>
+              </div>
+            </div>
+
+            {/* Registration */}
+            <div className="bg-gradient-to-r from-green-600/10 to-green-600/5 border border-green-600/30 rounded-lg p-6 text-center">
+              <h3 className="text-xl font-bold text-white mb-2">Registration Now Open</h3>
+              <p className="text-gray-400 text-sm mb-4">Parent/guardian registration required for all minors. The registration form will collect emergency contact, allergy, and photo-consent information.</p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdewt879wU74Iyg5JwNzb2atvlPilY3JOmV-c2DlBm6QewzSQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-colors"
+              >
+                Register Now <ArrowRight size={18} />
+              </a>
+              <p className="text-gray-500 text-xs mt-4">Coordinator: Dr. Tony Mofoke — tonymofoke@yahoo.com</p>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-gray-700">
+              <p className="text-sm text-gray-500 italic">
+                An annual SOBA Calgary initiative — with a one-week summer bootcamp envisioned in years to come.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Past Event - St. Joseph Feast Day */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-5xl mx-auto">
