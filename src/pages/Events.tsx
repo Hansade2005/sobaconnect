@@ -23,6 +23,20 @@ const Events: React.FC = () => {
   const [registering, setRegistering] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
+  const foodbankPhotos = [
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.27.55 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.27.57 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.27.58 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.27.59 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.00 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.01 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.02 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.03 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.04 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.05 PM.jpeg',
+    '/june-20-event/WhatsApp Image 2026-08-06 at 7.28.06 PM.jpeg',
+  ].map(encodeURI);
+
   useEffect(() => {
     const loadEvents = async () => {
       try {
@@ -72,6 +86,86 @@ const Events: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Events</h1>
           <p className="text-xl text-gray-300">Join us for community events, workshops, and learning opportunities</p>
+        </div>
+      </section>
+
+      {/* Recent Event - Calgary Food Bank Volunteer */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="inline-block bg-red-600/20 text-red-400 text-sm font-semibold px-4 py-1 rounded-full mb-4">Recent Event</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">SOBA Calgary Volunteer Services at the Calgary Food Bank</h2>
+            <p className="text-gray-400 text-lg">June 20, 2026</p>
+          </div>
+
+          <div className="card mb-8">
+            <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-6">
+              <div className="flex items-center gap-2">
+                <Calendar size={16} className="text-red-600" />
+                Friday, June 20, 2026
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={16} className="text-red-600" />
+                Calgary Food Bank, Calgary, AB
+              </div>
+              <div className="flex items-center gap-2">
+                <Users size={16} className="text-red-600" />
+                6 Volunteers
+              </div>
+            </div>
+
+            <div className="space-y-4 text-gray-300 leading-relaxed mb-6">
+              <p>
+                On June 20, 2026, six dedicated SOBA Calgary volunteers proudly served at the Calgary Food Bank, sorting and organizing donated food items to support families facing food insecurity across our community.
+              </p>
+              <p>
+                The Calgary Food Bank team commended our volunteers for their dedication, teamwork, and commitment to service. Beyond making a meaningful contribution, the activity strengthened our partnership with the Food Bank and reaffirmed SOBA Calgary's commitment to community engagement.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 bg-slate-800/50 border border-gray-700 rounded-lg p-5 mb-6">
+              <div className="text-center">
+                <div className="text-2xl mb-1">👥</div>
+                <p className="text-white font-semibold text-sm">6 Volunteers</p>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-1">📦</div>
+                <p className="text-white font-semibold text-sm">Food Sorting</p>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-1">💙</div>
+                <p className="text-white font-semibold text-sm">Community Impact</p>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl mb-1">🤝</div>
+                <p className="text-white font-semibold text-sm">Partnership</p>
+              </div>
+            </div>
+
+            <p className="text-gray-300 italic">
+              We are grateful to everyone who participated and look forward to our next volunteer initiative. Together, we can make a difference. We encourage everyone to volunteer whenever possible — every act of service helps build stronger, more caring communities.
+            </p>
+          </div>
+
+          {/* Event Photos */}
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Event Photos</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {foodbankPhotos.map((src, i) => (
+                <div
+                  key={i}
+                  className="relative group cursor-pointer overflow-hidden rounded-lg border border-gray-700 hover:border-red-600 transition-all"
+                  onClick={() => setSelectedPhoto(src)}
+                >
+                  <img
+                    src={src}
+                    alt={`Calgary Food Bank Volunteer - Photo ${i + 1}`}
+                    className="w-full h-36 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
