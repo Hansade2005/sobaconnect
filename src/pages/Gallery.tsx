@@ -5,7 +5,19 @@ const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    // Latest event photos (April 2026)
+    // Calgary Food Bank Volunteer - June 2026 (Most Recent)
+    { id: 301, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.27.55 PM.jpeg') },
+    { id: 302, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.27.57 PM.jpeg') },
+    { id: 303, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.27.58 PM.jpeg') },
+    { id: 304, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.27.59 PM.jpeg') },
+    { id: 305, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.00 PM.jpeg') },
+    { id: 306, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.01 PM.jpeg') },
+    { id: 307, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.02 PM.jpeg') },
+    { id: 308, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.03 PM.jpeg') },
+    { id: 309, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.04 PM.jpeg') },
+    { id: 310, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.05 PM.jpeg') },
+    { id: 311, title: 'Calgary Food Bank Volunteer', category: 'Volunteers', image: encodeURI('/june-20-event/WhatsApp Image 2026-08-06 at 7.28.06 PM.jpeg') },
+    // St. Joseph Feast Day photos (April 2026)
     { id: 201, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-1.jpeg' },
     { id: 202, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-2.jpeg' },
     { id: 203, title: 'St. Joseph Feast Day', category: 'St. Joseph Feast Day', image: '/team/events/event-new-3.jpeg' },
